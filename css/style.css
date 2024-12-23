@@ -509,3 +509,42 @@
     bottom: 22px;
 }
 }
+
+.store-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .store-item:hover {
+        transform: scale(1.05);
+    }
+
+    .store-item img {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .store-item:hover img {
+        transform: scale(1.1);
+    }
+
+    .overlay {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .store-item:hover .overlay {
+        opacity: 1;
+    }
+
+    .overlay h3 {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .bg-dark-light{
+        background-color: #0f172b87;
+    }
